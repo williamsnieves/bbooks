@@ -1,7 +1,7 @@
 import express from 'express'
 import { json, urlencoded } from 'body-parser'
 import morgan from 'morgan'
-import config from './config/index'
+import config from './config/'
 import cors from 'cors'
 import booksRouter from './resources/books/books.router'
 
@@ -13,12 +13,6 @@ app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
-
-app.get('/test', (req, res) => {
-  res.json({
-    message: 'init endpoints from node'
-  })
-})
 
 app.use('/api/books', booksRouter)
 
