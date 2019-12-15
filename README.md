@@ -24,7 +24,7 @@ yarn start
 
 yarn test
 
-#Flow of the app
+# Flow of the app
 
 Due to the short time in the client i have a login component connected with reach router, the login is a fake login because i  have considered that the most important thing is to implement the flow of the app in a general way, so to make login we can use the next data:
 
@@ -37,7 +37,7 @@ Once in the dashboard we have a version responsive o the list of books, you have
 
 In regard to the components, i have started applying tdd to build de components and i haved took the advantage to the hooks to build the components
 
-#Important notes about the development process
+# Important notes about the development process
 
 Is important to know that due to short time is a little difficult to cover all details of the app, and more in the case when you want to reach out the best result as possible, because of that many things are pending or is possible to apply a better way to develop (For example in the server side is pending to add tests to cover the results of the api)
 
