@@ -1,0 +1,39 @@
+.wrapper {
+    width: 97%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    --columns: 4;
+}
+[class*="col-"] {
+--width: 4;
+--initialbasis: calc(var(--width, 0) / var(--columns, 4) * 100%);
+--gap: calc((var(--columns) - var(--width)) * 1%);
+flex-basis: calc(var(--initialbasis) - var(--gap));
+text-align: center;
+box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+@media only screen and (min-width: 480px)  {
+	.col-1-2,
+	.col-2  {
+        --width: 2;
+        margin: 0.2em;
+	}
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+
+	.col-1-2,
+	.col-1-4 {
+        --width: 1;
+        margin: 0.5em;
+	}
+}
+

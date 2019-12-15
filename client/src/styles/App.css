@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+  color: #bbb;
+}
+
+img {
+  width: 100%;
+  max-width: 128px;
+}
+
+.App {
+  height: 100vh;
+}
+
+.warning-alert {
+  background: #fdcb6e;
+  margin: 2em;
+  text-align: center;
+  color: #fff;
+  padding: 2em;
+}
+
+.spinner {
+  text-align: center;
+}
